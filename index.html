@@ -116,8 +116,23 @@ a {
 
 ```
 <p>
-  Pet Grief is an AI companion app for people grieving the loss of a pet. The app provides
-  supportive conversation, grief guidance, and a calm mobile experience for users going through pet loss.
+  What it is
+
+Pet Grief is an app you built to support people grieving the loss of a pet, inspired by your own experience losing your dog Louie. It grew out of the children's book you wrote, "I'll Always Be Your Buddy," and centers on an AI companion (Louie) that users can chat with for comfort and connection.
+Core features
+
+AI chat with Louie: Users can talk to an AI version of a dog companion. The persona was carefully tuned so Louie feels like a real dog casually texting, short responses, no invented memories about the user's specific pet, no overly therapeutic or clinical language.
+Per pet chat histories: Each pet a user adds gets its own separate chat thread.
+Journal entries: Users can write journal entries about their pet, which feed into Louie's system prompt so the AI has real context to draw from rather than making things up.
+Rainbow Bridge Wall: A Supabase backed community memorial wall where users can post tributes, tied to device ID ownership (no account required).
+Rainbow Bridge fog device: When details about a lost pet are genuinely unclear or unknown, Louie has a built in way to acknowledge that gracefully instead of fabricating memories.
+Reunion photo generator: Uses fal.ai (flux 2 flex/edit) through a Supabase Edge Function to generate an image imagining a reunion with the pet.
+Push notifications and onboarding quiz: Helps personalize the experience from the start.
+Multi pet awareness: The AI is aware of all pets in a household, so it doesn't refer to others by the wrong context.
+
+Platforms and pricing
+
+Built in Swift/SwiftUI with a Supabase backend (project ref mohlrksqnyshahragebr) for chat history, journal entries, and the Rainbow Bridge Wall, plus fal.ai for image generation.
 </p>
 <p><strong>Built with:</strong> Flutter, Supabase, and AI integration.</p>
 
